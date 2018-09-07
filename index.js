@@ -20,3 +20,12 @@ function driversByRevenue(drivers) {
   array.sort(function sorter (x,y) {return x.revenue - y.revenue})
  return array
 }
+
+function driversByName(drivers) {
+  const array = []
+  for (const x of drivers) {
+    array.push(x)
+  }
+  array.sort(function sorter (x,y) {return x.name.localeCompare(y.name)})
+ return array
+}
