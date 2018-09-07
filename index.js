@@ -13,6 +13,10 @@ function logDriversByHometown(drivers, location) {
 }
 
 function driversByRevenue(drivers) {
-  const array = drivers.sort(function sorter (x,y) {return x.revenue - y.revenue})
+  const array = []
+  for (const x of drivers) {
+    array.push(x)
+  }
+  array.sort(function sorter (x,y) {return x.revenue - y.revenue})
  return array
 }
