@@ -32,7 +32,7 @@ function driversByName(drivers) {
 
 function totalRevenue(drivers) {
   debugger;
-const reduce = function (agg, el, i, arr) {return agg}
+const reduced = function (agg, el, i, arr) {return agg + el.revenue}
   return drivers.reduce(reduce,0)
 
 }
