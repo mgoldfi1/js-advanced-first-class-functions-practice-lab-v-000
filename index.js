@@ -2,6 +2,6 @@
 function logDriverNames(drivers) {
   debugger;
   for (const x of drivers) {
-    return console.log(x.name)
+    console.log(x.name)
   }
 }
