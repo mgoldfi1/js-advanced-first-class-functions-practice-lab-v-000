@@ -36,6 +36,6 @@ const reduced = function (agg, el) {return agg + el.revenue}
 }
 
 function averageRevenue(drivers) {
-  const reduced = function (agg, el) {return agg + el.revenue}
-    return drivers.reduce(reduced,0)
+  const reduced = function (agg, el, i, arr) {return agg + el.revenue}
+    return drivers.reduce(reduced,0)/drivers.length
 }
