@@ -33,6 +33,6 @@ function driversByName(drivers) {
 function totalRevenue(drivers) {
   debugger;
 const reduced = function (agg, el, i, arr) {return agg + el.revenue}
-  return drivers.reduce(reduce,0)
+  return drivers.reduce(reduced,0)
 
 }
