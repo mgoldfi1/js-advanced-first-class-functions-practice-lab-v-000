@@ -5,3 +5,10 @@ function logDriverNames(drivers) {
     console.log(x.name)
   }
 }
+
+function logDriversByHometown(drivers, location) {
+  const names = drivers.filter(function (x) {return x.hometown === location})
+  for (const name of names) {
+    console.log(name)
+  }
+}
